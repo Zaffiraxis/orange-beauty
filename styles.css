@@ -219,8 +219,9 @@ section{ position:relative; }
 .cinfo{ display:flex; gap:16px; align-items:flex-start; padding: 18px 0; border-bottom:1px solid var(--line); }
 .cinfo .ic{ width:46px; height:46px; border-radius:14px; flex:none; display:grid; place-items:center; background: var(--accent-soft); color: var(--accent); }
 .cinfo .ic svg{ width:22px; height:22px; }
+.cinfo > span:not(.ic){ display:flex; flex-direction:column; gap:2px; min-width:0; overflow:hidden; }
 .cinfo .lbl{ font-size:12.5px; letter-spacing:.06em; text-transform:uppercase; color: var(--muted); }
-.cinfo .val{ font-size: 18px; font-weight:600; }
+.cinfo .val{ font-size: 18px; font-weight:600; word-break:break-word; overflow-wrap:break-word; }
 .cinfo .val a:hover{ color: var(--accent); }
 .messengers{ display:flex; flex-wrap:wrap; gap:12px; margin-top: 26px; }
 .msg-btn{ display:inline-flex; align-items:center; gap:9px; padding:13px 20px; border-radius: var(--radius-pill); font-weight:600; font-size:14.5px; border:1.5px solid var(--line); background: var(--surface); transition: transform .25s, border-color .25s, color .25s, box-shadow .25s; }
